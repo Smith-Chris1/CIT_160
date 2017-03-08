@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body bgcolor="grey">
+        <meta charset="utf-8">
+        <style>
+            html, body {
+                margin: 0;
+                height: 100%;
+                font-family: 'Arial', sans-serif;
+            }
+
+            #content_wrapper {
+                position: relative;
+                min-height: 50%;
+                padding: 1em 1em 1em calc(50px + 1em);
+            }
+
+            .toolbar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50px;
+                height: 50%;
+                background: #9E9E9E;
+                overflow: hidden;
+
+                -webkit-transition: width 1s, background 2s;
+                transition: width 1s, background 2s;
+            }
+
+            .toolbar_content {
+                min-width: 125px;
+                padding: 1em 1em 1em calc(50px + 1em);
+            }
+
+            .toolbar a {
+                text-decoration: none;
+            }
+
+            .toolbar ul {
+                padding-left: 1em;
+            }
+
+            .toolbar:hover {
+                cursor: pointer;
+                background: #E0E0E0;
+                width: 300px;
+
+                -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+            }
+
+            nav {
+                background: #3F51B5;
+                padding: 1em;
+                -webkit-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.75);
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="content_wrapper">
+            <div class="toolbar">
+                <div class="toolbar_content">
+                    <h1>transitioned</h1>
+                    <ul>
+                        <li><a href="#">Look at the transition!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1>CSS3 Transitions</h1>
+            <p>Mouse over the light gray area to the left the transition.</p>
+        </div>
+    </body>
+</html>

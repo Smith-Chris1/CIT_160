@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body bgcolor="grey">
+        <style>
+            html, body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                height: 100%;
+                color: #424242;
+            }
+
+            .panel {
+                width: 50%;
+                min-height: 100px;
+            }
+
+            .content {
+                padding: 1em;
+                margin: 0 auto;
+                max-width: 980px;
+            }
+
+            .gray {
+                background: gray;
+            }
+
+            .black {
+                background: black;
+            }
+
+            .white {
+                background: white;
+            }
+
+            .box {
+                display: inline-block;
+                margin: 1em;
+                padding: 1em;
+                width: 80px;
+                height: 80px;
+                border: 1px solid #fff;
+            }
+
+            .pulse {
+                animation: pulse 5s infinite;
+            }
+
+            @keyframes pulse {
+                0% {
+                    background: initial;
+                }
+
+                100% {
+                    background: orange;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel gray">
+            <div class="content">
+                <h1>JavaScript Events</h1>
+            </div>
+        </div>
+        <div class="panel black">
+            <div class="content">
+                <h3>Event 1: Moblie</h3>
+                <div class="box white"
+                     ontouchstart="changeBackground(this, 'white')">
+                   Mobile or touch only.
+                </div>
+            </div>
+        </div>
+        <div class="panel gray">
+            <div class="content">
+                <h3>Event 2: Mouse</h3>
+                <div class="box white"
+                     onmouseout="changeBackground(this, 'white')"
+                     onmouseover="changeBackground(this, 'white')">
+                    Mouse over me.
+                </div>
+            </div>
+        </div>
+        <div class="panel black">
+            <div class="content">
+                <h3>Event 3: click</h3>
+                <div class="box white" onclick="changeBackground(this, 'white')">
+                    Click me.
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../events.js"></script>
+</html>

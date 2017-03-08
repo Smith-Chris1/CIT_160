@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body bgcolor="grey">
+<H1>DOM Manipulation</H1>
+<button onclick="addelement()">Create a P element</button>
+<button onclick="addChild()">AddChild</button>
+<button onclick="remChild()">Remove Child</button>
+
+
+<script>
+function addelement() {
+    var para = document.createElement("P");
+    var t = document.createTextNode("This is a paragraph.");
+    para.appendChild(t);
+    document.body.appendChild(para);
+}
+</script>
+<script>
+function addChild() {
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode("Horse");
+    node.appendChild(textnode);
+    document.getElementById("animals").appendChild(node);
+}
+</script>
+<script>
+function remChild() {
+    var list = document.getElementById("animals");   
+    var list_items = list.getElementsByTagName("li");
+    var i = list_items.length;
+    list.removeChild(list.childNodes[i]);
+}
+</script>
+<script>
+function remelement() {
+    var list = document.getElementsByTagName("P");
+    var i = list.length;
+    list.parentNode.removeChild(list.childNodes[i]);
+}
+</script>
+
+<ul id="animals">
+  <li>Dog</li>
+  <li>Cat</li>
+</ul>
+
+</body>
+</html>
+

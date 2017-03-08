@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body bgcolor="grey">
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<h1>Javascript Object</h1>
+<p>Enter the following information to create and display a Javascript Object created with a function.</p>
+<p>First Name: <input type="text" id="fName"=></input>
+<p>Last Name: <input type="text" id="lName"=></input>
+<p>Gender: <input type="text" id="Gender"=></input>
+<p>Age: <input type="text" id="age"=></input>
+<button onclick="createVar()">Submit</button></p>
+ 
+<p id=createdOBJ></p>
+<p id=createdOBJ1></p>
+
+<h1>Inheritance</h1>
+<p>The funtion will run again when you click continue, It will give you Mary's profile. <button onclick="createMary()">Submit</button></p>
+
+<script>
+function createObject(firstName,lastName,gender,age){
+this.first = firstName;
+this.last = lastName;
+this.sex = gender;
+this.old = age;
+
+
+}
+</script>
+
+<script>
+function createVar(){
+var one = document.getElementById("fName").value;
+var two = document.getElementById("lName").value;
+var three = document.getElementById("Gender").value;
+var four = document.getElementById("age").value;
+
+var createOBJ = new createObject(one, two, three, four);
+document.getElementById("createdOBJ").innerHTML = createOBJ.last + "," + createOBJ.first + "," + createOBJ.sex + "," + createOBJ.old;
+}
+</script>
+
+<script>
+function createMary(){
+var one = "Mary";
+var two = "Smith";
+var three = "F";
+var four = "33";
+
+var createOBJ1 = new createObject(one, two, three, four);
+document.getElementById("createdOBJ1").innerHTML = createOBJ1.last + "," + createOBJ1.first + "," + createOBJ1.sex + "," + createOBJ1.old;
+}
+</script>

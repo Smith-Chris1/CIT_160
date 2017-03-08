@@ -1,0 +1,22 @@
+[
+{
+"firstName": "Justin",
+"lastName": "Fryar",
+"email": "fryajust@gmail.com"
+},
+{
+"firstName": "Marina", 
+"lastName": "Haibullina",
+"email": "mkinezumi@gmail.com"
+},
+{
+"firstName": "Casey", 
+"lastName": "Heyrend",
+"email": "caseyheyrend.byui8@gmail.com"
+},
+{
+"firstName": "Chris", 
+"lastName": "Smith",
+"email": "christopher.erick.smith@gmail.com"
+}
+]

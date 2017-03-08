@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body bgcolor="grey">
+<h1>HTML 5 Video Tag</h1>
+<video width="720" controls>
+  <source src="HR Safety Video-HD.mp4" type="video/mp4">
+</video>
+
+<p>My Company HR video that I worked on.</a>.</p>
+
+<h1>HTML 5 Audio Tag</h1>
+<audio controls>
+  <source src="beep-06.mp3" type="audio/mpeg">
+</audio>
+
+<p>BEEP!</p>
+
+<h1>HTML 5 Canvas Tag</h1>
+
+<canvas id="cit261Canvas" width="400" height="100"></canvas>
+<script type="text/javascript">
+var canvas = document.getElementById("cit261Canvas");
+var context = canvas.getContext("2d");
+context.font = "20px Arial";
+context.fillText("CIT 261 is Awesome!",5,50);
+context.font = "10px Arial";
+context.fillText("(Not Sure what else to put?)",35,80);
+context.save();
+context.scale(1, .5);
+context.beginPath();
+context.arc(100, 100, 80, 0, Math.PI*2, false);
+context.stroke();
+context.closePath();
+context.restore();
+</script>
+</body>
+</html>

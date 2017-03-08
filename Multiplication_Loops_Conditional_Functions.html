@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body bgcolor="grey">
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<h1>Loops</h1>
+<p>  Enter the number to multiply by: <input type="text" id="multiply"=></input>
+<button onclick="multiply()">Submit</button></p>
+
+
+<h1>Conditionals</h1>
+<p>Enter 1 for "Hello" and 2 for "Goodbye": <input="number" id="conditional"=></input>
+<button> onclick="conditional()">Submit</button></p>
+<div id="conditional">
+
+</div>
+<div id="multiplyTable">
+
+</div>
+
+<script>
+function multiply(){
+
+var num = document.getElementById("multiply").value;
+var i = 0;
+ 
+document.getElementById("multiplyTable").innerHTML = document.write('<table border="1" cellspacing="0">');
+for(i=1;i<10;i++) {
+    document.write("<tr><td>" + num + " x " + i + " = " + num*i + "</td></tr>");
+}
+ 
+document.getElementById("multiplyTable").innerHTML = document.write("</table>");
+
+}
+function conditional(){
+	var cond = document.getElementById("conditional").value;
+	if cond = 1 document.write("Hello")
+	if cond = 2 document.write("Goodbye")
+}
+</script>

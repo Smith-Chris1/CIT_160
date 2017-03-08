@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body bgcolor="grey">
+        <meta charset="utf-8">
+        <title>cit261</title>
+        <style>
+            html, body {
+                font-family: 'Arial', sans-serif;
+            }
+
+            .container {
+                position: relative;
+                width: 100%;
+                padding: 1em;
+            }
+
+            #black_box {
+                margin: 1em;
+                width: 100px;
+                height: 100px;
+                background: black;
+
+                -webkit-transition: background 1s ease;
+                transition: background 1s ease;
+            }
+
+            #black_box_button {
+                margin-left: 1em;
+            }
+
+            #black_box.change_box {
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Triggering CSS3 Transitions with JavaScript</h1>
+
+        <div class="container">
+            <div id="black_box"></div>
+            <button id="black_box_button">Change Color</button>
+        </div>
+    </body>
+    <script src="../css3.js"></script>
+</html>

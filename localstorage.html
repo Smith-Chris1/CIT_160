@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body bgcolor="grey">
+        <style>
+            html, body {
+                font-family: 'Arial', sans-serif;
+            }
+
+            #animal_list {
+                min-width: 200px;
+                min-height: 200px;
+                padding: 1em;
+                margin: 1em;
+            }
+
+            #add_to_animal_list {
+                margin: 1em;
+            }
+
+            #add_to_animal_list fieldset {
+                margin: 1em 0;
+            }
+
+            #storage {
+                margin: 0 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Local Storage</h1>
+        <div id="animal_list">
+            <h3>Animal List</h3>
+            <table id="animal_list_table", border=1px solid #000000, text-align=left, padding=8px;>
+                <thead>
+                    <tr>
+                        <th>Animal Name</th>
+                        <th>Animal Type</th>
+                    </tr>
+                </thead>
+                <tbody id="animal_list_data">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="add_to_animal_list">
+            <fieldset>
+                <label for="animal_name">Animal Name: </label>
+                <input name="animal_name" type="text" id="animal_name">
+            </fieldset>
+
+            <fieldset>
+                <label for="animal_type">Animal Type: </label>
+                <input name="animal_type" type="text" id="animal_type">
+            </fieldset>
+
+            <button onclick="addToList()">Add To List</button>
+        </div>
+        <pre id="storage"></pre>
+    </body>
+    <script src="../localstorage.js"></script>
+</html>
